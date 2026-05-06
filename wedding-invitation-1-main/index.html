@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/circle.css" />
+    <script src="countdown/simplyCountdown.umd.js"></script>
+  </head>
+  <body>
+    <!-- bagian hero -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>გეპატიჟებით ჩვენს ქორწილში<span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h1>გიორგი & თამთა</h1>
+        <p>ქორწილამდე დარჩენილია</p>
+        <!-- nanti ada countdown disini -->
+        <div id="countdown" class="countdown simply-countdown-circle mt-4 mb-4"></div>
+        <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()">გახსენით მოსაწვევი</a>
+      </main>
+    </section>
+
+    <!-- bagian navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Giorgi & Tamta</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rama & Sinta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- bagian home -->
+    <section id="home" class="home">
+
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>გეპატიჟებით ქორწილში</h2>
+            <h3>ჩვენი ბედნიერების გასაზიარებლად</h3>
+            <p>ქორწილი გაიმართება 6 ივნისს, </p>
+            <p>რესტორან კერა ჰოლში </p>
+            <p>259ბ აეროპორტის გზატკეცილი, ბათუმი</p>
+          </div>
+
+          <div class="row couple">
+      <!-- წყვილის სექცია ფოტოებით -->
+       
+          <div class="row position-relative justify-content-center align-items-center" style="margin-bottom: 80px;">
+            
+            <!-- სასიძო -->
+            <div class="col-5 col-md-5">
+              <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-end justify-content-center h-100">
+                <h3 class="me-md-4 mb-3 mb-md-0 text-center text-md-end">გიორგი</h3>
+                <img src="img/picc1.jpg" alt="გიორგი" class="img-fluid rounded-circle shadow-sm" style="max-width: 150px; aspect-ratio: 1/1; object-fit: cover;">
+              </div>
+            </div>
+            
+            <!-- ცენტრალური გული -->
+            <div class="position-absolute top-50 start-50 translate-middle text-center" style="width: 55px; height: 55px; z-index: 10;">
+              <div class="bg-white rounded-circle shadow d-flex justify-content-center align-items-center w-100 h-100">
+                <i class="bi bi-heart-fill" style="color: #ff4d85; font-size: 1.3rem;"></i>
+              </div>
+            </div>
+            
+            <!-- პატარძალი -->
+            <div class="col-5 col-md-5">
+              <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-start justify-content-center h-100">
+                <img src="img/picc2.jpg" alt="თამთა" class="img-fluid rounded-circle shadow-sm" style="max-width: 150px; aspect-ratio: 1/1; object-fit: cover;">
+                <h3 class="ms-md-4 mt-3 mt-md-0 mb-0 text-center text-md-start">თამთა</h3>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- ფორმის სექცია (დაშორებულია ფოტოებისგან) -->
+      <div class="row mt-5 pt-3 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <form method="POST" action="https://script.google.com/macros/s/AKfycbygLjOp4YlI3LfXW-sQxrSboT1bMrDvpViHu13VoxbTM7_rt3I5cAtNrz5ezAECTQLBNA/exec" id="my-form" class="custom-form mx-auto">
+
+            <h2 class="form-title mb-4">დადასტურება</h2>
+            <p>გთხოვთ დაადასტუროთ 20 მაისამდე</p>
+
+            <!-- სახელი -->
+            <div class="form-group mb-3">
+              <input type="text" id="nama" name="nama" required placeholder="სახელი და გვარი" style="text-align: center; max-width: 300px; width: 100%; margin: 0 auto; display: block;">
+            </div>
+
+            <!-- დიახ / არა -->
+            <div class="form-toggle mb-3 d-flex justify-content-center align-items-center gap-3">
+              <div>
+                <input type="radio" id="yes" name="status" value="მოვდივარ" checked>
+                <label for="yes">დიახ</label>
+              </div>
+
+              <div>
+                <input type="radio" id="no" name="status" value="ვერ მოვდივარ">
+                <label for="no">არა</label>
+              </div>
+            </div>
+
+            <!-- რაოდენობა -->
+            <div class="form-quantity mb-4">
+              <input type="number" name="jumlah" value="1" min="1" max="10" style="text-align: center; width: 70px; margin: 0 auto; display: block;">
+            </div>
+
+            <!-- ღილაკი -->
+            <button type="submit" class="submit-btn mt-2">გაგზავნა</button>
+
+          </form>
+        </div>
+      </div>
+      
+    <!-- bagian info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>ქორწილის ინფორმაცია</h2>
+            <p class="alamat">მისამართი: <br>კერა ჰოლი <br>
+259ბ აეროპორტის გზატკეცილი, ბათუმი, Batumi, Georgia, 6000</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.5547753082477!2d41.60863734365533!3d41.5995798927331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678f000c13907b%3A0xd2c3c3572936c1ef!2sKera%20Hall!5e1!3m2!1sen!2sge!4v1777827768090!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://maps.app.goo.gl/ZNumLQ4UUbMeoZX16" target="_blank" class="btn btn-light btn-sm my-4">დააჭირეთ ლოკაციის გახსნისთვის</a>
+            <p class="description"></p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">
+                ჯვრისწერა 
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>13:30 - 14:30</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>შაბათი, 6 ივნისი 2026</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                ჯვრისწერა გაიმართება ღვთისმშობლის შობის სახელობის საკათედრო ტაძარში, ბათუმი
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">
+                რესტორანი
+              </div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>18:00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>შაბათი, 6 ივნისი 2026</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                გთხოვთ არ დააგვიანოთ. <br> დრო დაცულია © 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- audio -->
+       <div id="audio-container">
+        <audio id="backSong" autoplay loop>
+          <source src="audio/cintaVina.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="audio-icon-wrapper" style="display: none;">
+          <i class="bi bi-disc"></i>
+        </div>
+       </div>
+<!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        simplyCountdown('#countdown', {
+          year: 2026,
+          month: 6,
+          day: 6,
+          hours: 19, // Target hour [0-23], default: 0
+          minutes: 0, // Target minute [0-59], default: 0
+          seconds: 0, // Target second [0-59], default: 0
+          words: {
+            // Custom labels, with lambda for plurals
+            days: { root: 'დღე', lambda: (root, n) => (n > 1 ? root + '' : root) },
+            hours: { root: 'საათი', lambda: (root, n) => (n > 1 ? root + '' : root) },
+            minutes: { root: 'წუთი', lambda: (root, n) => (n > 1 ? root + '' : root) },
+            seconds: { root: 'წამი', lambda: (root, n) => (n > 1 ? root + '' : root) },
+          },
+          plural: true, // Use plurals for labels
+          inline: false, // Inline format: e.g., "24 days, 4 hours, 2 minutes"
+          inlineSeparator: ', ', // Separator for inline format, default: ", "
+          inlineClass: 'simply-countdown-inline', // CSS class for inline countdown
+          enableUtc: false, // Use UTC time if true
+          refresh: 1000, // Refresh interval in ms, default: 1000
+          sectionClass: 'simply-section', // CSS class for each countdown section
+          amountClass: 'simply-amount', // CSS class for numeric values
+          wordClass: 'simply-word', // CSS class for unit labels
+          zeroPad: false, // Pad numbers with leading zero
+          removeZeroUnits: false, // Remove units with zero value
+          countUp: false, // Count up after reaching zero
+          onEnd: () => {}, // Callback when countdown ends
+          onStop: () => {}, // Callback when countdown is stopped
+          onResume: () => {}, // Callback when countdown is resumed
+          onUpdate: (params) => {}, // Callback when countdown is updated
+        });
+      });
+    </script>
+    <!-- solve hasil dari penanganan overflow -->
+    <script>
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+        offcanvas.addEventListener('show.bs.offcanvas', function() {
+        stickyTop.style.overflow = 'visible';
+        });
+
+        offcanvas.addEventListener('hidden.bs.offcanvas', function() {
+        stickyTop.style.overflow = 'hidden';
+        });
+    </script>
+
+    <!-- disable scroll -->
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper')
+      const audioIcon = document.querySelector('.audio-icon-wrapper i')
+      const backSong = document.querySelector('#backSong');
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function() {
+          window.scrollTo(scrollTop, scrollLeft);
+        }
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function() { }
+        rootElement.style.scrollBehavior = 'smooth';
+        //localStorage.setItem('opened', 'true');
+        playAudio()
+      }
+
+      //menggabungkan fungsi play audio dengan lihat undangan
+      function playAudio() {
+        backSong.volume = 0.5;
+        backSong.play();
+        audioIconWrapper.style.display = 'flex'
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          backSong.pause ();
+          audioIcon.classList.remove('bi-disc');
+          audioIcon.classList.add('bi-pause-circle');
+        } else {
+          backSong.play ();
+          audioIcon.classList.add('bi-disc');
+          audioIcon.classList.remove('bi-pause-circle');
+        }
+
+        isPlaying = !isPlaying;
+      }
+      // if(!localStorage.getItem('opened')){
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+<script>
+window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const action = form.action;
+
+    // 🔥 ეგრევე აჩვენე წარმატება
+    alert("თქვენი პასუხი წარმატებით გაიგზავნა!");
+    form.reset();
+
+    // 🔥 უკან გააგზავნე request (background-ში)
+    fetch(action, {
+      method: 'POST',
+      body: data,
+      mode: 'no-cors'
+    }).catch(() => {
+      console.log("Submission failed silently");
+    });
+  });
+});
+</script>
+
+     <!-- js menamai undangan sesuai nama tamu -->
+     <script>
+      const urlParams = new URLSearchParams(window.location.search); //pengambilan parameter dari url yang bernilai nama tamu
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || '';
+
+      // pemanggilan element yang akan diisi nama dari url
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = `${pronoun} ${nama},`;
+
+      document.querySelector('#nama').value = nama;
+     </script>
+
+  </body>
+</html>
+	
