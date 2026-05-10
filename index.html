@@ -19,12 +19,19 @@
     <!-- bagian hero -->
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
-        <h4>გეპატიჟებით ჩვენს ქორწილში<span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h4>გეპატიჟებით ჩვენს ქორწილში</h4>
         <h1>გიორგი & თამთა</h1>
         <p>ქორწილამდე დარჩენილია</p>
         <!-- nanti ada countdown disini -->
         <div id="countdown" class="countdown simply-countdown-circle mt-4 mb-4"></div>
         <a href="#home" class="btn mt-4" btn-lg onClick="enableScroll()">გახსენით მოსაწვევი</a>
+        <br>
+      <br>
+      <br>
+              <br>
+      <br>
+      <br>
+
       </main>
     </section>
 
@@ -56,7 +63,7 @@
             <h2>გეპატიჟებით ქორწილში</h2>
             <h3>ჩვენი ბედნიერების გასაზიარებლად</h3>
             <p>ქორწილი გაიმართება 6 ივნისს, </p>
-            <p>რესტორან კერა ჰოლში </p>
+            <p>რესტორან "კერა ჰოლში" </p>
             <p>259ბ აეროპორტის გზატკეცილი, ბათუმი</p>
           </div>
 
@@ -69,7 +76,7 @@
             <div class="col-5 col-md-5">
               <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-end justify-content-center h-100">
                 <h3 class="me-md-4 mb-3 mb-md-0 text-center text-md-end">გიორგი</h3>
-                <img src="img/picc1.jpg" alt="გიორგი" class="img-fluid rounded-circle shadow-sm" style="max-width: 150px; aspect-ratio: 1/1; object-fit: cover;">
+                <img src="img/boy.png" alt="გიორგი" class="img-fluid rounded-circle shadow-sm" style="max-width: 150px; aspect-ratio: 1/1; object-fit: cover;">
               </div>
             </div>
             
@@ -83,7 +90,7 @@
             <!-- პატარძალი -->
             <div class="col-5 col-md-5">
               <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-start justify-content-center h-100">
-                <img src="img/picc2.jpg" alt="თამთა" class="img-fluid rounded-circle shadow-sm" style="max-width: 150px; aspect-ratio: 1/1; object-fit: cover;">
+                <img src="img/girl.png" alt="თამთა" class="img-fluid rounded-circle shadow-sm" style="max-width: 150px; aspect-ratio: 1/1; object-fit: cover;">
                 <h3 class="ms-md-4 mt-3 mt-md-0 mb-0 text-center text-md-start">თამთა</h3>
               </div>
             </div>
@@ -92,43 +99,188 @@
         </div>
       </div>
 
-      <!-- ფორმის სექცია (დაშორებულია ფოტოებისგან) -->
-      <div class="row mt-5 pt-3 justify-content-center">
-        <div class="col-lg-8 text-center">
-          <form method="POST" action="https://script.google.com/macros/s/AKfycbygLjOp4YlI3LfXW-sQxrSboT1bMrDvpViHu13VoxbTM7_rt3I5cAtNrz5ezAECTQLBNA/exec" id="my-form" class="custom-form mx-auto">
+<!-- ფორმის სექცია -->
+<div class="row mt-5 pt-3 justify-content-center">
+  <div class="col-lg-8 text-center">
 
-            <h2 class="form-title mb-4">დადასტურება</h2>
-            <p>გთხოვთ დაადასტუროთ 20 მაისამდე</p>
+    <form 
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbyBlfYNEebnv21NUGbZ2iIb3BWWO1Z5ODEk8KkwVkSKo5wISIAztwIQrL5fQEQKK0lYBg/exec" id="my-form" class="custom-form mx-auto"
+      id="my-form"
+      class="custom-form mx-auto"
+    >
 
-            <!-- სახელი -->
-            <div class="form-group mb-3">
-              <input type="text" id="nama" name="nama" required placeholder="სახელი და გვარი" style="text-align: center; max-width: 300px; width: 100%; margin: 0 auto; display: block;">
-            </div>
+      <h2 class="form-title mb-4">დადასტურება</h2>
+      <p>გთხოვთ დაადასტუროთ 20 მაისამდე</p>
 
-            <!-- დიახ / არა -->
-            <div class="form-toggle mb-3 d-flex justify-content-center align-items-center gap-3">
-              <div>
-                <input type="radio" id="yes" name="status" value="მოვდივარ" checked>
-                <label for="yes">დიახ</label>
-              </div>
-
-              <div>
-                <input type="radio" id="no" name="status" value="ვერ მოვდივარ">
-                <label for="no">არა</label>
-              </div>
-            </div>
-
-            <!-- რაოდენობა -->
-            <div class="form-quantity mb-4">
-              <input type="number" name="jumlah" value="1" min="1" max="10" style="text-align: center; width: 70px; margin: 0 auto; display: block;">
-            </div>
-
-            <!-- ღილაკი -->
-            <button type="submit" class="submit-btn mt-2">გაგზავნა</button>
-
-          </form>
-        </div>
+      <!-- სახელი -->
+      <div class="form-group mb-3">
+        <input 
+          type="text"
+          id="nama"
+          name="nama"
+          minlength="7"
+          required
+          placeholder="სახელი და გვარი"
+          style="
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+          "
+        >
       </div>
+
+      <!-- დიახ / არა -->
+      <div class="form-toggle mb-3 d-flex justify-content-center align-items-center gap-3">
+
+        <div>
+          <input type="radio" id="yes" name="status" value="მოვდივარ" checked>
+          <label for="yes">დიახ</label>
+        </div>
+
+        <div>
+          <input type="radio" id="no" name="status" value="ვერ მოვდივარ">
+          <label for="no">არა</label>
+        </div>
+
+      </div>
+
+      <!-- რაოდენობა -->
+      <div class="form-quantity mb-4 text-center">
+
+        <label 
+          for="guestCount"
+          style="
+            display:block;
+            margin-bottom:10px;
+            font-weight:600;
+          "
+        >
+          შეიყვანეთ სტუმრების რაოდენობა
+        </label>
+
+        <input 
+          type="number"
+          name="jumlah"
+          id="guestCount"
+          placeholder="მაგ: 2"
+          min="1"
+          max="10"
+          required
+          style="
+            text-align: center;
+            width: 90px;
+            margin: 0 auto;
+            display: block;
+            padding: 8px;
+          "
+        >
+
+      </div>
+
+      <!-- ღილაკი -->
+      <button type="submit" class="submit-btn mt-2">
+        გაგზავნა
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- FORM VALIDATION + SUBMIT -->
+<script>
+window.addEventListener("load", function() {
+
+  const form = document.getElementById('my-form');
+  const guestInput = document.getElementById("guestCount");
+  const nameInput = document.getElementById("nama");
+
+  const yesRadio = document.getElementById("yes");
+  const noRadio = document.getElementById("no");
+
+  // 🔥 სტუმრების რაოდენობის select focus
+  guestInput.addEventListener("focus", function() {
+    this.select();
+  });
+
+  // 🔥 თუ ვერ მოდის
+  noRadio.addEventListener("change", () => {
+
+    if (noRadio.checked) {
+      guestInput.value = "0";
+      guestInput.disabled = true;
+    }
+
+  });
+
+  // 🔥 თუ მოდის
+  yesRadio.addEventListener("change", () => {
+
+    if (yesRadio.checked) {
+      guestInput.value = "";
+      guestInput.disabled = false;
+    }
+
+  });
+
+  // 🔥 submit
+  form.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const nameValue = nameInput.value.trim();
+    const guestValue = guestInput.value.trim();
+
+    // ✅ სრული სახელი
+    if (nameValue.length < 7) {
+
+      alert("გთხოვთ შეიყვანოთ სრული სახელი და გვარი");
+      nameInput.focus();
+      return;
+
+    }
+
+    // ✅ სტუმრების რაოდენობა
+    if (
+      yesRadio.checked &&
+      (guestValue === "" || Number(guestValue) < 1)
+    ) {
+
+      alert("გთხოვთ მიუთითოთ სტუმრების რაოდენობა");
+      guestInput.focus();
+      return;
+
+    }
+
+    const data = new FormData(form);
+    const action = form.action;
+
+    // ✅ success instantly
+    alert("თქვენი პასუხი წარმატებით გაიგზავნა!");
+
+    form.reset();
+
+    // reset state
+    guestInput.disabled = false;
+
+    // ✅ background submit
+    fetch(action, {
+      method: 'POST',
+      body: data,
+      mode: 'no-cors'
+    }).catch(() => {
+
+      console.log("Submission failed silently");
+
+    });
+
+  });
+
+});
+</script>
       
     <!-- bagian info -->
     <section id="info" class="info">
@@ -138,13 +290,18 @@
             <h2>ქორწილის ინფორმაცია</h2>
             <p class="alamat">მისამართი: <br>კერა ჰოლი <br>
 259ბ აეროპორტის გზატკეცილი, ბათუმი, Batumi, Georgia, 6000</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.5547753082477!2d41.60863734365533!3d41.5995798927331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678f000c13907b%3A0xd2c3c3572936c1ef!2sKera%20Hall!5e1!3m2!1sen!2sge!4v1777827768090!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.5547753082477!2d41.60863734365533!3d41.5995798927331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678f000c13907b%3A0xd2c3c3572936c1ef!2sKera%20Hall!5e1!3m2!1sen!2sge!4v1777827768090!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen=""
+      loading="lazy">
+      ></iframe>
+</div>
             <a href="https://maps.app.goo.gl/ZNumLQ4UUbMeoZX16" target="_blank" class="btn btn-light btn-sm my-4">დააჭირეთ ლოკაციის გახსნისთვის</a>
             <p class="description"></p>
           </div>
         </div>
         <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
+          <div class="col-12 col-md-5">
             <div class="card text-center text-bg-light mb-5">
               <div class="card-header">
                 ჯვრისწერა 
@@ -162,12 +319,12 @@
                 </div>
               </div>
               <div class="card-footer">
-                ჯვრისწერა გაიმართება ღვთისმშობლის შობის სახელობის საკათედრო ტაძარში, ბათუმი
+                <h6>ჯვრისწერა გაიმართება ღვთისმშობლის შობის სახელობის საკათედრო ტაძარში, ბათუმი</h6>
 
               </div>
             </div>
           </div>
-          <div class="col-md-5 col-10">
+          <div class="col-12 col-md-5">
             <div class="card text-center text-bg-light">
               <div class="card-header">
                 რესტორანი
@@ -184,8 +341,10 @@
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
-                გთხოვთ არ დააგვიანოთ. <br> დრო დაცულია © 
+              <div class="container-fluid px-2">
+                <div class="card-footer">
+                  <h6>გთხოვთ არ დააგვიანოთ. <br> დრო დაცულია © </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -193,16 +352,15 @@
       </div>
 
 
-      <!-- audio -->
-       <div id="audio-container">
-        <audio id="backSong" autoplay loop>
-          <source src="audio/cintaVina.mp3" type="audio/mp3">
-        </audio>
+<div id="audio-container">
+  <audio id="backSong" loop preload="auto" playsinline>
+    <source src="audio/cnavita.mp3" type="audio/mp3">
+  </audio>
 
-        <div class="audio-icon-wrapper" style="display: none;">
-          <i class="bi bi-disc"></i>
-        </div>
-       </div>
+  <div class="audio-icon-wrapper" style="display: none;">
+    <i class="bi bi-disc"></i>
+  </div>
+</div>
 <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
@@ -256,82 +414,99 @@
         });
     </script>
 
-    <!-- disable scroll -->
     <script>
-      const rootElement = document.querySelector(':root');
-      const audioIconWrapper = document.querySelector('.audio-icon-wrapper')
-      const audioIcon = document.querySelector('.audio-icon-wrapper i')
-      const backSong = document.querySelector('#backSong');
-      let isPlaying = false;
+const rootElement = document.querySelector(':root');
+const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+const audioIcon = document.querySelector('.audio-icon-wrapper i');
+const backSong = document.querySelector('#backSong');
 
-      function disableScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+let isPlaying = false;
 
-        window.onscroll = function() {
-          window.scrollTo(scrollTop, scrollLeft);
-        }
+// 🚀 preload audio early (მნიშვნელოვანია delay-ის მოსაშორებლად)
+window.addEventListener("DOMContentLoaded", () => {
+  backSong.load();
+});
 
-        rootElement.style.scrollBehavior = 'auto';
-      }
+// ❌ disable scroll სანამ user არ დააჭერს
+function disableScroll() {
+  const scrollTop = window.pageYOffset;
+  const scrollLeft = window.pageXOffset;
 
-      function enableScroll() {
-        window.onscroll = function() { }
-        rootElement.style.scrollBehavior = 'smooth';
-        //localStorage.setItem('opened', 'true');
-        playAudio()
-      }
+  window.onscroll = function() {
+    window.scrollTo(scrollTop, scrollLeft);
+  };
 
-      //menggabungkan fungsi play audio dengan lihat undangan
-      function playAudio() {
-        backSong.volume = 0.5;
-        backSong.play();
-        audioIconWrapper.style.display = 'flex'
+  rootElement.style.scrollBehavior = 'auto';
+}
+
+// ✅ enable + play instantly
+function enableScroll() {
+  window.onscroll = function() {};
+  rootElement.style.scrollBehavior = 'smooth';
+
+  playAudio();
+}
+
+// 🎵 play audio (safe version)
+function playAudio() {
+  backSong.volume = 0.5;
+
+  const playPromise = backSong.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        audioIconWrapper.style.display = 'flex';
         isPlaying = true;
-      }
+      })
+      .catch(() => {
+        console.log("Autoplay blocked, waiting for interaction...");
+      });
+  }
+}
 
-      audioIconWrapper.onclick = function () {
-        if (isPlaying) {
-          backSong.pause ();
-          audioIcon.classList.remove('bi-disc');
-          audioIcon.classList.add('bi-pause-circle');
-        } else {
-          backSong.play ();
-          audioIcon.classList.add('bi-disc');
-          audioIcon.classList.remove('bi-pause-circle');
-        }
+// 🔁 toggle audio
+audioIconWrapper.onclick = function () {
+  if (isPlaying) {
+    backSong.pause();
+    audioIcon.classList.remove('bi-disc');
+    audioIcon.classList.add('bi-pause-circle');
+  } else {
+    backSong.play();
+    audioIcon.classList.add('bi-disc');
+    audioIcon.classList.remove('bi-pause-circle');
+  }
 
-        isPlaying = !isPlaying;
-      }
-      // if(!localStorage.getItem('opened')){
-      //   disableScroll();
-      // }
-      disableScroll();
-    </script>
+  isPlaying = !isPlaying;
+};
 
+// 🚫 თავიდანვე დაბლოკე scroll
+disableScroll();
+</script>
 <script>
-window.addEventListener("load", function() {
-  const form = document.getElementById('my-form');
+const guestInput = document.getElementById("guestCount");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
+guestInput.addEventListener("focus", function() {
+  this.select();
+});
+</script>
+<script>
+const yesRadio = document.getElementById("yes");
+const noRadio = document.getElementById("no");
+const guestInput2 = document.getElementById("guestCount");
 
-    const data = new FormData(form);
-    const action = form.action;
+noRadio.addEventListener("change", () => {
+  if (noRadio.checked) {
+    guestInput.value = 0;
+    guestInput.disabled = true;
+  }
+});
 
-    // 🔥 ეგრევე აჩვენე წარმატება
-    alert("თქვენი პასუხი წარმატებით გაიგზავნა!");
-    form.reset();
-
-    // 🔥 უკან გააგზავნე request (background-ში)
-    fetch(action, {
-      method: 'POST',
-      body: data,
-      mode: 'no-cors'
-    }).catch(() => {
-      console.log("Submission failed silently");
-    });
-  });
+yesRadio.addEventListener("change", () => {
+  if (yesRadio.checked) {
+    guestInput.value = 1;
+    guestInput.disabled = false;
+  }
 });
 </script>
 
